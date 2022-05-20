@@ -28,15 +28,15 @@ const styles = StyleSheet.create({
   },
 
   textTitle: {
-    color: Color.RED_HOLDER,
+    color: Color.TEXT_PRIMARY,
     fontFamily: Font.font_bold_700,
-    fontSize: getSize.m(50, 0.3),
+    fontSize: getSize.m(30, 0.3),
   },
 
   textEdu: {
     fontFamily: Font.font_bold_700,
-    fontSize: getSize.m(50, 0.3),
-    color: Color.GREEN_HOLDER,
+    fontSize: getSize.m(25, 0.3),
+    color: Color.TEXT_SECONDARY,
   },
 
   contentLogin: {
@@ -58,14 +58,14 @@ const styles = StyleSheet.create({
 
   textRegister: {
     fontFamily: Font.font_SVN_700,
-    color: Color.GREEN_HOLDER,
+    color: Color.TEXT_PRIMARY,
     fontSize: getSize.m(13, 0.3),
     paddingHorizontal: getSize.m(5),
     paddingVertical: getSize.m(5),
   },
 
   textForgetPassword: {
-    color: Color.GREEN_HOLDER,
+    color: Color.TEXT_SECONDARY,
     fontFamily: Font.font_SVN_400,
     fontSize: getSize.m(13, 0.3),
   },
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   },
 
   btnLogin: {
-    backgroundColor: Color.GREEN_HOLDER,
+    backgroundColor: Color.TEXT_PRIMARY,
     height: getSize.m(48),
     borderRadius: getSize.m(24),
     marginTop: getSize.m(30),
@@ -146,6 +146,20 @@ const styles = StyleSheet.create({
     position: 'relative',
     width: Dimens.DEVICE_WIDTH * 0.75 - getSize.m(100),
     bottom: 0,
+  },
+  logoLogin: {
+    width: 50,
+    height: 50,
+  },
+  blockLogo: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
+  textLogo: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
 });
 

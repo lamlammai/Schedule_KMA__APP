@@ -1,25 +1,13 @@
-import React, {
-  useEffect,
-  useState,
-} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import {useTranslation} from 'react-i18next';
-import {
-  BackHandler,
-  SafeAreaView,
-  TouchableOpacity,
-} from 'react-native';
+import {BackHandler, SafeAreaView, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Images} from 'src/assets/images';
 import {isTablet} from 'src/base/common/Constants';
 import {getSize} from 'src/base/common/responsive';
 import Styles from 'src/base/common/Styles';
-import {
-  Block,
-  Image,
-  Spinner,
-  Text,
-} from 'src/components';
+import {Block, Image, Spinner, Text} from 'src/components';
 import ModalError from 'src/components/ModalError';
 import AuthService from 'src/domain/auth.service';
 import {
@@ -101,11 +89,11 @@ const NewPasswordScreen = ({navigation, route}) => {
           <Icon
             name={'arrow-back-outline'}
             size={getSize.m(24)}
-            color={Color.GREEN}
+            color={Color.RED}
           />
         </TouchableOpacity>
         <Block marginTop={isTablet ? 5 : 20} row alignSelf="center">
-          <Text style={styles.textTitle}>Go</Text>
+          <Text style={styles.textTitle}>1</Text>
           <Text style={styles.textEdu}>Edu</Text>
         </Block>
         <Block alignCenter marginTop={isTablet ? 5 : 20}>

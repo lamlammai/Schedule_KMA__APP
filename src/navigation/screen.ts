@@ -25,14 +25,14 @@ export const NOTIFY_SCREEN = 'Notify';
 //Blog
 export const BLOG_SCREEN = 'BlogScreen';
 export const DETAIL_BLOG_SCREEN = 'DetailBlog';
-export const BLOG_STACK = 'Blog';
+export const BLOG_STACK = 'Todo';
 
 //listCourse
 export const LIST_COURSE_SCREEN = 'ListCourseStack';
-export const LIST_COURSE_STACK = 'ListCourse';
+export const LIST_COURSE_STACK = 'Search';
 
 //live class
-export const LIVE_CLASS_STACK = 'LiveClass';
+export const LIVE_CLASS_STACK = 'User';
 export const LIVE_CLASS_SCREEN = 'LiveClassScreen';
 export const DETAIL_LIVE_CLASS_SCREEN = 'DetailLiveClass';
 

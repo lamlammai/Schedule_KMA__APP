@@ -15,6 +15,9 @@ import {
   LIST_COURSE_STACK,
   LIVE_CLASS_STACK,
 } from './screen';
+import SearchScreen from 'src/screens/dashboard/home/SearchScreen';
+import AddScheduleScreeen from 'src/screens/dashboard/home/AddScheduleScreen';
+import InfomationUserScreen from 'src/screens/dashboard/home/InfomationUserScreen';
 
 const Icon = getIconComponent('goEdu');
 
@@ -51,9 +54,12 @@ const HomeTabNavigator = () => {
         // tabBarShowLabel: false,
       })}>
       <HomeTab.Screen name={HOME_SCREEN} component={HomeScreen} />
-      <HomeTab.Screen name={LIST_COURSE_STACK} component={HomeScreen} />
-      <HomeTab.Screen name={BLOG_STACK} component={HomeScreen} />
-      <HomeTab.Screen name={LIVE_CLASS_STACK} component={HomeScreen} />
+      <HomeTab.Screen name={LIST_COURSE_STACK} component={SearchScreen} />
+      <HomeTab.Screen name={BLOG_STACK} component={AddScheduleScreeen} />
+      <HomeTab.Screen
+        name={LIVE_CLASS_STACK}
+        component={InfomationUserScreen}
+      />
     </HomeTab.Navigator>
   );
 };
